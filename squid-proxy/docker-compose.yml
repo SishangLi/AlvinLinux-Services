@@ -14,7 +14,7 @@ services:
       - ./passwd:/etc/squid/passwd
       - ./squid.conf:/etc/squid/squid.conf
     dns:
-      - 210.45.240.99
+      - 210.45.240.99 # HFUT
       - 8.8.8.8
       - 8.8.4.4
     # flowing content used in lmc.hfut cluster

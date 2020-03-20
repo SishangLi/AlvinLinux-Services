@@ -17,7 +17,12 @@
 ### squid.conf
 - squid 配置文件
 - 需要了解ACL匹配规则
+- - squid的配置详解请看[这里](https://blog.csdn.net/blade2001/article/details/8061258)
 ### passwd
 - 可以使用 `htpasswd -c /to/file/path/passwd username` 来创建验证文件
+### 常见问题
+- 查看squid_log/access.log 若有"TCP_MISS/503 4208"的错误，请注释掉docker-compose.ymal中和环境不匹配的DNS配置
+- 在小配置机器上可能会出现服务无法启动，可以查看squid_log/cache.log 若有 "out of memary" 字样。可以通过建立交换空间[swap](https://blog.csdn.net/zstack_org/article/details/53258588)解决
+- 阿里云Centos实例上没有问题，Vultr上没有通过，猜想应该是系统问题，暂时无法找到，错误提示也是"TCP_MISS/503"
 
 

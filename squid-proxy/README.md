@@ -17,7 +17,7 @@
 ### squid.conf
 - squid 配置文件
 - 需要了解ACL匹配规则
-- - squid的配置详解请看[这里](https://blog.csdn.net/blade2001/article/details/8061258)
+  - squid的配置详解请看[这里](https://blog.csdn.net/blade2001/article/details/8061258)
 ### passwd
 - 可以使用 `htpasswd -c /to/file/path/passwd username` 来创建验证文件
 ### 常见问题

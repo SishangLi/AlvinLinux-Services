@@ -1,0 +1,47 @@
+version: '3.7'
+services:
+  squid:
+    build: ./
+    container_name: squid_proxy
+    network_mode: bridge
+    # flowing content used in lmc.hfut cluster
+    # domainname: lmc.hfut.edu.cn
+    hostname: containerd_squid
+    volumes:
+      - ./squid_log:/var/log/squid
+      - ./squid_cache:/var/cache/squid
+      # Alvin@123456a?
+      - ./passwd:/etc/squid/passwd
+      - ./squid.conf:/etc/squid/squid.conf
+    dns:
+      - 210.45.240.99
+      - 8.8.8.8
+      - 8.8.4.4
+    # flowing content used in lmc.hfut cluster
+    # dns_search: lmc.hfut.edu.cn
+    # extra_hosts:
+    #  - "svr101.lmc.hfut.edu.cn:192.168.0.101"
+    #  - "svr102.lmc.hfut.edu.cn:192.168.0.102"
+    #  - "svr103.lmc.hfut.edu.cn:192.168.0.103"
+    #  - "svr105.lmc.hfut.edu.cn:192.168.0.105"
+    #  - "svr106.lmc.hfut.edu.cn:192.168.0.106"
+    #  - "svr108.lmc.hfut.edu.cn:192.168.0.108"
+    #  - "svr109.lmc.hfut.edu.cn:192.168.0.109"
+    #  - "svr110.lmc.hfut.edu.cn:192.168.0.110"
+    #  - "svr113.lmc.hfut.edu.cn:192.168.0.113"
+    #  - "svr114.lmc.hfut.edu.cn:192.168.0.114"
+    #  - "svr116.lmc.hfut.edu.cn:192.168.0.116"
+    #  - "svr117.lmc.hfut.edu.cn:192.168.0.117"
+    #  - "svr120.lmc.hfut.edu.cn:192.168.0.120"
+    #  - "svr121.lmc.hfut.edu.cn:192.168.0.121"
+    #  - "svr111.lmc.hfut.edu.cn:192.168.0.111"
+    #  - "svr122.lmc.hfut.edu.cn:192.168.0.122"
+    #  - "svr123.lmc.hfut.edu.cn:192.168.0.123"
+    #  - "containerd_squid.lmc.hfut.edu.cn:192.168.0.105"
+    ports:
+      - 3128:3128/tcp
+#volumes:
+#  squid_log:
+#    external: true
+#  squid_cache:
+#    external: true

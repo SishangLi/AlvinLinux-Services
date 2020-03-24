@@ -1,0 +1,54 @@
+version: '2.4'
+services:
+    nginx:
+        image: nginx:latest
+        container_name: nginx
+        hostname: container_nginx
+        #restart: unless-stopped
+        volumes:
+            - ./nginx/ssl:/etc/nginx/letsencrypt
+            - ./nginx/webroot:/var/www/html
+            - ./nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
+            - ./nginx/logs:/var/log/nginx
+            - ./nginx/html:/usr/share/nginx/html
+        ports:
+            - 80:80/tcp
+            - 443:443/tcp
+        networks:
+            ngray:
+                ipv4_address: 172.27.0.101
+                #ipv6_address: 2001:3984:3989::11
+        extra_hosts:
+            - "container_v2ray:172.27.0.102"
+# Use the following script to open BBR accelerate
+# wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+# ------------------------------------------------
+    v2ray:
+        image: v2ray/official
+        container_name: v2ray
+        hostname: container_v2ray
+       # restart: unless-stopped
+        volumes:
+            - ./v2ray/config.json:/etc/v2ray/config.json
+            - ./v2ray/logs:/var/log/v2ray
+            - ./v2ray/hosts:/etc/hosts
+        ports:
+            - 52020:52020/tcp
+        networks:
+            ngray:
+                ipv4_address: 172.27.0.102
+                #ipv6_address: 2001:3984:3989::12
+        extra_hosts:
+            - "container_nginx:172.27.0.101"
+                
+networks:
+    ngray:
+        driver: bridge
+        enable_ipv6: true
+        ipam:
+            driver: default
+            config: 
+                - subnet: 172.27.0.0/24
+                  gateway: 172.27.0.1
+                - subnet: 2001:3984:3989::/64
+                  gateway: 2001:3984:3989::1

@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    server_name hbq.supermarvel.top;
+ 
+    location /.well-known/acme-challenge/ {
+		allow all;
+		root /var/www/html/hbq.supermarvel.top/;
+    }
+   
+}
+
+

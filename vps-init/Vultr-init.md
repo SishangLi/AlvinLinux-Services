@@ -6,6 +6,7 @@
 - 防火墙开启80/443端口
 - 添加谷歌学术IPV6地址
 - 安装常用软件
+  - yum update
   - net-tools
   - git
 - 安装BBR加速模块

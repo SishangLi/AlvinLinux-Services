@@ -33,6 +33,7 @@ echo "Seting scholar.google.com.hk IP ..." \
 EOF
 
 echo "Installing common packages ..." \
+	&& yum update -y \
     && yum install -y net-tools git
 
 echo "Installing BBR ..." \

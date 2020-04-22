@@ -1,18 +1,13 @@
 server {
     listen 80;
-    server_name hbq.supermarvel.top;
- 
-    # location /.well-known/acme-challenge/ {
-    #	allow all;
-    #	root /var/www/html/hbq.supermarvel.top/;
-    # }
-   
+    server_name xxx.xxxx.com;
+    
     rewrite ^(.*) https://$server_name$1 permanent;
 }
 
 server {
     listen       443 ssl http2;
-    server_name hbq.supermarvel.top;
+    server_name xxx.xxxx.com;
     charset utf-8;
 
     # ssl seting
@@ -24,8 +19,8 @@ server {
     ssl_session_cache shared:SSL:10m;
     ssl_session_timeout 10m;
     ssl_session_tickets off;
-    ssl_certificate /etc/nginx/letsencrypt/live/hbq.supermarvel.top/fullchain.pem;
-    ssl_certificate_key /etc/nginx/letsencrypt/live/hbq.supermarvel.top/privkey.pem;
+    ssl_certificate /etc/nginx/letsencrypt/live/xxx.xxxx.com/fullchain.pem;
+    ssl_certificate_key /etc/nginx/letsencrypt/live/xxx.xxxx.com/privkey.pem;
 
     access_log  /var/log/nginx/welcome/access.log;
     error_log /var/log/nginx/welcome/error.log;
@@ -35,7 +30,7 @@ server {
         index  index.html;
     }
     
-    location /loveyouthreethousands { 
+    location /source { 
       proxy_redirect off;
       proxy_pass http://127.0.0.1:52020;
       proxy_http_version 1.1;

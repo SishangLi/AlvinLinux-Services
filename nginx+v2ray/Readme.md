@@ -16,7 +16,6 @@
 - 为网站生成证书，使用方法 `creat-ssl.sh www.vultr.com xxx@gmail.com host(bridge) /pathtov2ray`
 - 此文件完成了自动替换配置文件中的某些自动，提高了效率。
 - 若此文件以及自clone起以及被执行过一次，则不能再次执行，需要重新clone，否则会因为某些字段找不到出错。经测试，除非ssl证书申请出错（可能是域名短时间内申请次数太多），否则不会出错。出bug请联系作者lisishang@gmail.com
-- 
 
 ### recreate-ssl.sh
 - 证书每过一段时间会失效，失效后使用此脚本重新生成证书。（由于证书目前还没有失效过，故此脚本是否有效有待验证。）

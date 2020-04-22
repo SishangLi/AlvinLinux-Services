@@ -4,7 +4,7 @@ services:
         image: nginx:latest
         network_mode: host
         container_name: nginx
-        #restart: unless-stopped
+        restart: unless-stopped
         volumes:
             - ./nginx/ssl:/etc/nginx/letsencrypt
             - ./nginx/webroot:/var/www/html
@@ -21,7 +21,7 @@ services:
         image: v2ray/official
         network_mode: host
         container_name: v2ray
-       # restart: unless-stopped
+        restart: unless-stopped
         volumes:
             - ./v2ray/config.json:/etc/v2ray/config.json
             - ./v2ray/logs:/var/log/v2ray

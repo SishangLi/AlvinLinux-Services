@@ -12,7 +12,7 @@
 ### [预处理脚本](https://github.com/SishangLi/AlvinLinux-Services/tree/master/vps-init)
 - 此脚本用于初始化新建的VPS实例，包括root密码修改、新建用户以及安装常用软件包。
 
-### [OpenVPN+Frpc虚拟个人网络搭建]()
+### [OpenVPN+Frpc虚拟个人网络搭建](https://github.com/SishangLi/AlvinLinux-Services/tree/master/openvpn%2Bfrpc)
 - 基于[kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn)，增加了账户认证和限速功能。
 - 预计完善一键脚本，敬请期待...
 

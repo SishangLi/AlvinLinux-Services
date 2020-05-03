@@ -1,0 +1,366 @@
+2020/04/29 07:42:19| Created PID file (/var/run/squid.pid)
+2020/04/29 07:42:19| Set Current Directory to /var/cache/squid
+2020/04/29 07:42:19| Creating missing swap directories
+2020/04/29 07:42:19| /var/cache/squid exists
+2020/04/29 07:42:19| Making directories in /var/cache/squid/00
+2020/04/29 07:42:19| Making directories in /var/cache/squid/01
+2020/04/29 07:42:20| Making directories in /var/cache/squid/02
+2020/04/29 07:42:20| Making directories in /var/cache/squid/03
+2020/04/29 07:42:21| Making directories in /var/cache/squid/04
+2020/04/29 07:42:21| Making directories in /var/cache/squid/05
+2020/04/29 07:42:22| Making directories in /var/cache/squid/06
+2020/04/29 07:42:22| Making directories in /var/cache/squid/07
+2020/04/29 07:42:22| Making directories in /var/cache/squid/08
+2020/04/29 07:42:23| Making directories in /var/cache/squid/09
+2020/04/29 07:42:23| Making directories in /var/cache/squid/0A
+2020/04/29 07:42:24| Making directories in /var/cache/squid/0B
+2020/04/29 07:42:24| Making directories in /var/cache/squid/0C
+2020/04/29 07:42:25| Making directories in /var/cache/squid/0D
+2020/04/29 07:42:25| Making directories in /var/cache/squid/0E
+2020/04/29 07:42:26| Making directories in /var/cache/squid/0F
+2020/04/29 07:42:26| Making directories in /var/cache/squid/10
+2020/04/29 07:42:27| Making directories in /var/cache/squid/11
+2020/04/29 07:42:27| Making directories in /var/cache/squid/12
+2020/04/29 07:42:28| Making directories in /var/cache/squid/13
+2020/04/29 07:42:28| Making directories in /var/cache/squid/14
+2020/04/29 07:42:28| Making directories in /var/cache/squid/15
+2020/04/29 07:42:29| Making directories in /var/cache/squid/16
+2020/04/29 07:42:29| Making directories in /var/cache/squid/17
+2020/04/29 07:42:30| Making directories in /var/cache/squid/18
+2020/04/29 07:42:30| Making directories in /var/cache/squid/19
+2020/04/29 07:42:30| Making directories in /var/cache/squid/1A
+2020/04/29 07:42:31| Making directories in /var/cache/squid/1B
+2020/04/29 07:42:31| Making directories in /var/cache/squid/1C
+2020/04/29 07:42:32| Making directories in /var/cache/squid/1D
+2020/04/29 07:42:32| Making directories in /var/cache/squid/1E
+2020/04/29 07:42:32| Making directories in /var/cache/squid/1F
+2020/04/29 07:42:33| Making directories in /var/cache/squid/20
+2020/04/29 07:42:33| Making directories in /var/cache/squid/21
+2020/04/29 07:42:34| Making directories in /var/cache/squid/22
+2020/04/29 07:42:34| Making directories in /var/cache/squid/23
+2020/04/29 07:42:35| Making directories in /var/cache/squid/24
+2020/04/29 07:42:35| Making directories in /var/cache/squid/25
+2020/04/29 07:42:35| Making directories in /var/cache/squid/26
+2020/04/29 07:42:36| Making directories in /var/cache/squid/27
+2020/04/29 07:42:36| Making directories in /var/cache/squid/28
+2020/04/29 07:42:37| Making directories in /var/cache/squid/29
+2020/04/29 07:42:37| Making directories in /var/cache/squid/2A
+2020/04/29 07:42:37| Making directories in /var/cache/squid/2B
+2020/04/29 07:42:38| Making directories in /var/cache/squid/2C
+2020/04/29 07:42:38| Making directories in /var/cache/squid/2D
+2020/04/29 07:42:39| Making directories in /var/cache/squid/2E
+2020/04/29 07:42:39| Making directories in /var/cache/squid/2F
+2020/04/29 07:42:39| Making directories in /var/cache/squid/30
+2020/04/29 07:42:40| Making directories in /var/cache/squid/31
+2020/04/29 07:42:40| Making directories in /var/cache/squid/32
+2020/04/29 07:42:41| Making directories in /var/cache/squid/33
+2020/04/29 07:42:41| Making directories in /var/cache/squid/34
+2020/04/29 07:42:42| Making directories in /var/cache/squid/35
+2020/04/29 07:42:42| Making directories in /var/cache/squid/36
+2020/04/29 07:42:42| Making directories in /var/cache/squid/37
+2020/04/29 07:42:43| Making directories in /var/cache/squid/38
+2020/04/29 07:42:43| Making directories in /var/cache/squid/39
+2020/04/29 07:42:44| Making directories in /var/cache/squid/3A
+2020/04/29 07:42:44| Making directories in /var/cache/squid/3B
+2020/04/29 07:42:44| Making directories in /var/cache/squid/3C
+2020/04/29 07:42:45| Making directories in /var/cache/squid/3D
+2020/04/29 07:42:45| Making directories in /var/cache/squid/3E
+2020/04/29 07:42:46| Making directories in /var/cache/squid/3F
+2020/04/29 07:42:46| Removing PID file (/var/run/squid.pid)
+2020/04/29 07:42:46| Created PID file (/var/run/squid.pid)
+2020/04/29 07:42:46 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 07:42:46 kid1| Starting Squid Cache version 4.10 for x86_64-alpine-linux-musl...
+2020/04/29 07:42:46 kid1| Service Name: squid
+2020/04/29 07:42:46 kid1| Process ID 16
+2020/04/29 07:42:46 kid1| Process Roles: worker
+2020/04/29 07:42:46 kid1| With 1048576 file descriptors available
+2020/04/29 07:42:46 kid1| Initializing IP Cache...
+2020/04/29 07:42:46 kid1| DNS Socket created at 0.0.0.0, FD 5
+2020/04/29 07:42:46 kid1| Adding nameserver 8.8.8.8 from /etc/resolv.conf
+2020/04/29 07:42:46 kid1| Adding nameserver 8.8.4.4 from /etc/resolv.conf
+2020/04/29 07:42:46 kid1| helperOpenServers: Starting 0/5 'basic_ncsa_auth' processes
+2020/04/29 07:42:46 kid1| helperOpenServers: No 'basic_ncsa_auth' processes needed.
+2020/04/29 07:42:46 kid1| Logfile: opening log daemon:/var/log/squid/access.log
+2020/04/29 07:42:46 kid1| Logfile Daemon: opening log /var/log/squid/access.log
+2020/04/29 07:42:46 kid1| Unlinkd pipe opened on FD 13
+2020/04/29 07:42:46 kid1| Local cache digest enabled; rebuild/rewrite every 3600/3600 sec
+2020/04/29 07:42:46 kid1| Store logging disabled
+2020/04/29 07:42:46 kid1| Swap maxSize 262144 + 262144 KB, estimated 40329 objects
+2020/04/29 07:42:46 kid1| Target number of buckets: 2016
+2020/04/29 07:42:46 kid1| Using 8192 Store buckets
+2020/04/29 07:42:46 kid1| Max Mem  size: 262144 KB
+2020/04/29 07:42:46 kid1| Max Swap size: 262144 KB
+2020/04/29 07:42:47 kid1| Rebuilding storage in /var/cache/squid (no log)
+2020/04/29 07:42:47 kid1| Using Least Load store dir selection
+2020/04/29 07:42:47 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 07:42:47 kid1| Finished loading MIME types and icons.
+2020/04/29 07:42:47 kid1| HTCP Disabled.
+2020/04/29 07:42:47 kid1| Squid plugin modules loaded: 0
+2020/04/29 07:42:47 kid1| Adaptation support is off.
+2020/04/29 07:42:47 kid1| Accepting HTTP Socket connections at local=0.0.0.0:3128 remote=[::] FD 15 flags=9
+2020/04/29 07:43:04 kid1| Done scanning /var/cache/squid dir (0 entries)
+2020/04/29 07:43:04 kid1| Finished rebuilding storage from disk.
+2020/04/29 07:43:04 kid1|         0 Entries scanned
+2020/04/29 07:43:04 kid1|         0 Invalid entries.
+2020/04/29 07:43:04 kid1|         0 With invalid flags.
+2020/04/29 07:43:04 kid1|         0 Objects loaded.
+2020/04/29 07:43:04 kid1|         0 Objects expired.
+2020/04/29 07:43:04 kid1|         0 Objects cancelled.
+2020/04/29 07:43:04 kid1|         0 Duplicate URLs purged.
+2020/04/29 07:43:04 kid1|         0 Swapfile clashes avoided.
+2020/04/29 07:43:04 kid1|   Took 17.45 seconds (  0.00 objects/sec).
+2020/04/29 07:43:04 kid1| Beginning Validation Procedure
+2020/04/29 07:43:04 kid1|   Completed Validation Procedure
+2020/04/29 07:43:04 kid1|   Validated 0 Entries
+2020/04/29 07:43:04 kid1|   store_swap_size = 0.00 KB
+2020/04/29 07:43:05 kid1| storeLateRelease: released 0 objects
+2020/04/29 07:46:14 kid1| Starting new basicauthenticator helpers...
+2020/04/29 07:46:14 kid1| helperOpenServers: Starting 1/5 'basic_ncsa_auth' processes
+2020/04/29 07:51:19| Created PID file (/var/run/squid.pid)
+2020/04/29 07:51:19 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 07:51:19 kid1| Starting Squid Cache version 4.10 for x86_64-alpine-linux-musl...
+2020/04/29 07:51:19 kid1| Service Name: squid
+2020/04/29 07:51:19 kid1| Process ID 15
+2020/04/29 07:51:19 kid1| Process Roles: worker
+2020/04/29 07:51:19 kid1| With 1048576 file descriptors available
+2020/04/29 07:51:19 kid1| Initializing IP Cache...
+2020/04/29 07:51:19 kid1| DNS Socket created at 0.0.0.0, FD 5
+2020/04/29 07:51:19 kid1| Adding nameserver 8.8.8.8 from /etc/resolv.conf
+2020/04/29 07:51:19 kid1| Adding nameserver 8.8.4.4 from /etc/resolv.conf
+2020/04/29 07:51:19 kid1| helperOpenServers: Starting 0/5 'basic_ncsa_auth' processes
+2020/04/29 07:51:19 kid1| helperOpenServers: No 'basic_ncsa_auth' processes needed.
+2020/04/29 07:51:19 kid1| Logfile: opening log daemon:/var/log/squid/access.log
+2020/04/29 07:51:19 kid1| Logfile Daemon: opening log /var/log/squid/access.log
+2020/04/29 07:51:19 kid1| Unlinkd pipe opened on FD 13
+2020/04/29 07:51:19 kid1| Local cache digest enabled; rebuild/rewrite every 3600/3600 sec
+2020/04/29 07:51:19 kid1| Store logging disabled
+2020/04/29 07:51:19 kid1| Swap maxSize 262144 + 262144 KB, estimated 40329 objects
+2020/04/29 07:51:19 kid1| Target number of buckets: 2016
+2020/04/29 07:51:19 kid1| Using 8192 Store buckets
+2020/04/29 07:51:19 kid1| Max Mem  size: 262144 KB
+2020/04/29 07:51:19 kid1| Max Swap size: 262144 KB
+2020/04/29 07:51:20 kid1| Rebuilding storage in /var/cache/squid (dirty log)
+2020/04/29 07:51:20 kid1| Using Least Load store dir selection
+2020/04/29 07:51:20 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 07:51:20 kid1| Finished loading MIME types and icons.
+2020/04/29 07:51:20 kid1| HTCP Disabled.
+2020/04/29 07:51:20 kid1| Squid plugin modules loaded: 0
+2020/04/29 07:51:20 kid1| Adaptation support is off.
+2020/04/29 07:51:20 kid1| Accepting HTTP Socket connections at local=0.0.0.0:3128 remote=[::] FD 16 flags=9
+2020/04/29 07:51:20 kid1| Done reading /var/cache/squid swaplog (0 entries)
+2020/04/29 07:51:20 kid1| Store rebuilding is 0.00% complete
+2020/04/29 07:51:20 kid1| Finished rebuilding storage from disk.
+2020/04/29 07:51:20 kid1|         0 Entries scanned
+2020/04/29 07:51:20 kid1|         0 Invalid entries.
+2020/04/29 07:51:20 kid1|         0 With invalid flags.
+2020/04/29 07:51:20 kid1|         0 Objects loaded.
+2020/04/29 07:51:20 kid1|         0 Objects expired.
+2020/04/29 07:51:20 kid1|         0 Objects cancelled.
+2020/04/29 07:51:20 kid1|         0 Duplicate URLs purged.
+2020/04/29 07:51:20 kid1|         0 Swapfile clashes avoided.
+2020/04/29 07:51:20 kid1|   Took 0.03 seconds (  0.00 objects/sec).
+2020/04/29 07:51:20 kid1| Beginning Validation Procedure
+2020/04/29 07:51:20 kid1|   Completed Validation Procedure
+2020/04/29 07:51:20 kid1|   Validated 0 Entries
+2020/04/29 07:51:20 kid1|   store_swap_size = 0.00 KB
+2020/04/29 07:51:20 kid1| storeLateRelease: released 0 objects
+2020/04/29 07:52:26 kid1| Starting new basicauthenticator helpers...
+2020/04/29 07:52:26 kid1| helperOpenServers: Starting 1/5 'basic_ncsa_auth' processes
+2020/04/29 07:56:27| Created PID file (/var/run/squid.pid)
+2020/04/29 07:56:27 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 07:56:27 kid1| Starting Squid Cache version 4.10 for x86_64-alpine-linux-musl...
+2020/04/29 07:56:27 kid1| Service Name: squid
+2020/04/29 07:56:27 kid1| Process ID 15
+2020/04/29 07:56:27 kid1| Process Roles: worker
+2020/04/29 07:56:27 kid1| With 1048576 file descriptors available
+2020/04/29 07:56:27 kid1| Initializing IP Cache...
+2020/04/29 07:56:27 kid1| DNS Socket created at 0.0.0.0, FD 5
+2020/04/29 07:56:27 kid1| Adding nameserver 8.8.8.8 from /etc/resolv.conf
+2020/04/29 07:56:27 kid1| Adding nameserver 8.8.4.4 from /etc/resolv.conf
+2020/04/29 07:56:27 kid1| helperOpenServers: Starting 0/5 'basic_ncsa_auth' processes
+2020/04/29 07:56:27 kid1| helperOpenServers: No 'basic_ncsa_auth' processes needed.
+2020/04/29 07:56:27 kid1| Logfile: opening log daemon:/var/log/squid/access.log
+2020/04/29 07:56:27 kid1| Logfile Daemon: opening log /var/log/squid/access.log
+2020/04/29 07:56:27 kid1| Unlinkd pipe opened on FD 13
+2020/04/29 07:56:27 kid1| Local cache digest enabled; rebuild/rewrite every 3600/3600 sec
+2020/04/29 07:56:27 kid1| Store logging disabled
+2020/04/29 07:56:27 kid1| Swap maxSize 262144 + 262144 KB, estimated 40329 objects
+2020/04/29 07:56:27 kid1| Target number of buckets: 2016
+2020/04/29 07:56:27 kid1| Using 8192 Store buckets
+2020/04/29 07:56:27 kid1| Max Mem  size: 262144 KB
+2020/04/29 07:56:27 kid1| Max Swap size: 262144 KB
+2020/04/29 07:56:27 kid1| Rebuilding storage in /var/cache/squid (dirty log)
+2020/04/29 07:56:27 kid1| Using Least Load store dir selection
+2020/04/29 07:56:27 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 07:56:27 kid1| Finished loading MIME types and icons.
+2020/04/29 07:56:27 kid1| HTCP Disabled.
+2020/04/29 07:56:27 kid1| Squid plugin modules loaded: 0
+2020/04/29 07:56:27 kid1| Adaptation support is off.
+2020/04/29 07:56:27 kid1| Accepting HTTP Socket connections at local=0.0.0.0:3128 remote=[::] FD 16 flags=9
+2020/04/29 07:56:27 kid1| Done reading /var/cache/squid swaplog (0 entries)
+2020/04/29 07:56:27 kid1| Store rebuilding is 0.00% complete
+2020/04/29 07:56:27 kid1| Finished rebuilding storage from disk.
+2020/04/29 07:56:27 kid1|         0 Entries scanned
+2020/04/29 07:56:27 kid1|         0 Invalid entries.
+2020/04/29 07:56:27 kid1|         0 With invalid flags.
+2020/04/29 07:56:27 kid1|         0 Objects loaded.
+2020/04/29 07:56:27 kid1|         0 Objects expired.
+2020/04/29 07:56:27 kid1|         0 Objects cancelled.
+2020/04/29 07:56:27 kid1|         0 Duplicate URLs purged.
+2020/04/29 07:56:27 kid1|         0 Swapfile clashes avoided.
+2020/04/29 07:56:27 kid1|   Took 0.04 seconds (  0.00 objects/sec).
+2020/04/29 07:56:27 kid1| Beginning Validation Procedure
+2020/04/29 07:56:27 kid1|   Completed Validation Procedure
+2020/04/29 07:56:27 kid1|   Validated 0 Entries
+2020/04/29 07:56:27 kid1|   store_swap_size = 0.00 KB
+2020/04/29 07:56:28 kid1| storeLateRelease: released 0 objects
+2020/04/29 07:57:40| Created PID file (/var/run/squid.pid)
+2020/04/29 07:57:40 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 07:57:40 kid1| Starting Squid Cache version 4.10 for x86_64-alpine-linux-musl...
+2020/04/29 07:57:40 kid1| Service Name: squid
+2020/04/29 07:57:40 kid1| Process ID 15
+2020/04/29 07:57:40 kid1| Process Roles: worker
+2020/04/29 07:57:40 kid1| With 1048576 file descriptors available
+2020/04/29 07:57:40 kid1| Initializing IP Cache...
+2020/04/29 07:57:40 kid1| DNS Socket created at 0.0.0.0, FD 5
+2020/04/29 07:57:40 kid1| Adding nameserver 8.8.8.8 from /etc/resolv.conf
+2020/04/29 07:57:40 kid1| Adding nameserver 8.8.4.4 from /etc/resolv.conf
+2020/04/29 07:57:40 kid1| helperOpenServers: Starting 0/5 'basic_ncsa_auth' processes
+2020/04/29 07:57:40 kid1| helperOpenServers: No 'basic_ncsa_auth' processes needed.
+2020/04/29 07:57:40 kid1| Logfile: opening log daemon:/var/log/squid/access.log
+2020/04/29 07:57:40 kid1| Logfile Daemon: opening log /var/log/squid/access.log
+2020/04/29 07:57:41 kid1| Unlinkd pipe opened on FD 13
+2020/04/29 07:57:41 kid1| Local cache digest enabled; rebuild/rewrite every 3600/3600 sec
+2020/04/29 07:57:41 kid1| Store logging disabled
+2020/04/29 07:57:41 kid1| Swap maxSize 262144 + 262144 KB, estimated 40329 objects
+2020/04/29 07:57:41 kid1| Target number of buckets: 2016
+2020/04/29 07:57:41 kid1| Using 8192 Store buckets
+2020/04/29 07:57:41 kid1| Max Mem  size: 262144 KB
+2020/04/29 07:57:41 kid1| Max Swap size: 262144 KB
+2020/04/29 07:57:41 kid1| Rebuilding storage in /var/cache/squid (dirty log)
+2020/04/29 07:57:41 kid1| Using Least Load store dir selection
+2020/04/29 07:57:41 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 07:57:41 kid1| Finished loading MIME types and icons.
+2020/04/29 07:57:41 kid1| HTCP Disabled.
+2020/04/29 07:57:41 kid1| Squid plugin modules loaded: 0
+2020/04/29 07:57:41 kid1| Adaptation support is off.
+2020/04/29 07:57:41 kid1| Accepting HTTP Socket connections at local=0.0.0.0:3128 remote=[::] FD 16 flags=9
+2020/04/29 07:57:41 kid1| Done reading /var/cache/squid swaplog (0 entries)
+2020/04/29 07:57:41 kid1| Store rebuilding is 0.00% complete
+2020/04/29 07:57:41 kid1| Finished rebuilding storage from disk.
+2020/04/29 07:57:41 kid1|         0 Entries scanned
+2020/04/29 07:57:41 kid1|         0 Invalid entries.
+2020/04/29 07:57:41 kid1|         0 With invalid flags.
+2020/04/29 07:57:41 kid1|         0 Objects loaded.
+2020/04/29 07:57:41 kid1|         0 Objects expired.
+2020/04/29 07:57:41 kid1|         0 Objects cancelled.
+2020/04/29 07:57:41 kid1|         0 Duplicate URLs purged.
+2020/04/29 07:57:41 kid1|         0 Swapfile clashes avoided.
+2020/04/29 07:57:41 kid1|   Took 0.05 seconds (  0.00 objects/sec).
+2020/04/29 07:57:41 kid1| Beginning Validation Procedure
+2020/04/29 07:57:41 kid1|   Completed Validation Procedure
+2020/04/29 07:57:41 kid1|   Validated 0 Entries
+2020/04/29 07:57:41 kid1|   store_swap_size = 0.00 KB
+2020/04/29 07:57:42 kid1| storeLateRelease: released 0 objects
+2020/04/29 07:57:44 kid1| Starting new basicauthenticator helpers...
+2020/04/29 07:57:44 kid1| helperOpenServers: Starting 1/5 'basic_ncsa_auth' processes
+2020/04/29 08:03:40| Created PID file (/var/run/squid.pid)
+2020/04/29 08:03:40 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 08:03:40 kid1| Starting Squid Cache version 4.10 for x86_64-alpine-linux-musl...
+2020/04/29 08:03:40 kid1| Service Name: squid
+2020/04/29 08:03:40 kid1| Process ID 15
+2020/04/29 08:03:40 kid1| Process Roles: worker
+2020/04/29 08:03:40 kid1| With 1048576 file descriptors available
+2020/04/29 08:03:40 kid1| Initializing IP Cache...
+2020/04/29 08:03:40 kid1| DNS Socket created at 0.0.0.0, FD 5
+2020/04/29 08:03:40 kid1| Adding nameserver 8.8.8.8 from /etc/resolv.conf
+2020/04/29 08:03:40 kid1| Adding nameserver 8.8.4.4 from /etc/resolv.conf
+2020/04/29 08:03:40 kid1| helperOpenServers: Starting 0/5 'basic_ncsa_auth' processes
+2020/04/29 08:03:40 kid1| helperOpenServers: No 'basic_ncsa_auth' processes needed.
+2020/04/29 08:03:40 kid1| Logfile: opening log daemon:/var/log/squid/access.log
+2020/04/29 08:03:40 kid1| Logfile Daemon: opening log /var/log/squid/access.log
+2020/04/29 08:03:40 kid1| Unlinkd pipe opened on FD 13
+2020/04/29 08:03:40 kid1| Local cache digest enabled; rebuild/rewrite every 3600/3600 sec
+2020/04/29 08:03:40 kid1| Store logging disabled
+2020/04/29 08:03:40 kid1| Swap maxSize 262144 + 262144 KB, estimated 40329 objects
+2020/04/29 08:03:40 kid1| Target number of buckets: 2016
+2020/04/29 08:03:40 kid1| Using 8192 Store buckets
+2020/04/29 08:03:40 kid1| Max Mem  size: 262144 KB
+2020/04/29 08:03:40 kid1| Max Swap size: 262144 KB
+2020/04/29 08:03:41 kid1| Rebuilding storage in /var/cache/squid (dirty log)
+2020/04/29 08:03:41 kid1| Using Least Load store dir selection
+2020/04/29 08:03:41 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 08:03:41 kid1| Finished loading MIME types and icons.
+2020/04/29 08:03:41 kid1| HTCP Disabled.
+2020/04/29 08:03:41 kid1| Squid plugin modules loaded: 0
+2020/04/29 08:03:41 kid1| Adaptation support is off.
+2020/04/29 08:03:41 kid1| Accepting HTTP Socket connections at local=0.0.0.0:3128 remote=[::] FD 16 flags=9
+2020/04/29 08:03:41 kid1| Done reading /var/cache/squid swaplog (0 entries)
+2020/04/29 08:03:41 kid1| Store rebuilding is 0.00% complete
+2020/04/29 08:03:41 kid1| Finished rebuilding storage from disk.
+2020/04/29 08:03:41 kid1|         0 Entries scanned
+2020/04/29 08:03:41 kid1|         0 Invalid entries.
+2020/04/29 08:03:41 kid1|         0 With invalid flags.
+2020/04/29 08:03:41 kid1|         0 Objects loaded.
+2020/04/29 08:03:41 kid1|         0 Objects expired.
+2020/04/29 08:03:41 kid1|         0 Objects cancelled.
+2020/04/29 08:03:41 kid1|         0 Duplicate URLs purged.
+2020/04/29 08:03:41 kid1|         0 Swapfile clashes avoided.
+2020/04/29 08:03:41 kid1|   Took 0.03 seconds (  0.00 objects/sec).
+2020/04/29 08:03:41 kid1| Beginning Validation Procedure
+2020/04/29 08:03:41 kid1|   Completed Validation Procedure
+2020/04/29 08:03:41 kid1|   Validated 0 Entries
+2020/04/29 08:03:41 kid1|   store_swap_size = 0.00 KB
+2020/04/29 08:03:41 kid1| storeLateRelease: released 0 objects
+2020/04/29 08:03:57 kid1| Starting new basicauthenticator helpers...
+2020/04/29 08:03:57 kid1| helperOpenServers: Starting 1/5 'basic_ncsa_auth' processes
+2020/04/29 08:27:34| Created PID file (/var/run/squid.pid)
+2020/04/29 08:27:34 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 08:27:34 kid1| Starting Squid Cache version 4.10 for x86_64-alpine-linux-musl...
+2020/04/29 08:27:34 kid1| Service Name: squid
+2020/04/29 08:27:34 kid1| Process ID 15
+2020/04/29 08:27:34 kid1| Process Roles: worker
+2020/04/29 08:27:34 kid1| With 1048576 file descriptors available
+2020/04/29 08:27:34 kid1| Initializing IP Cache...
+2020/04/29 08:27:34 kid1| DNS Socket created at 0.0.0.0, FD 5
+2020/04/29 08:27:34 kid1| Adding nameserver 8.8.8.8 from /etc/resolv.conf
+2020/04/29 08:27:34 kid1| Adding nameserver 8.8.4.4 from /etc/resolv.conf
+2020/04/29 08:27:34 kid1| helperOpenServers: Starting 0/5 'basic_ncsa_auth' processes
+2020/04/29 08:27:34 kid1| helperOpenServers: No 'basic_ncsa_auth' processes needed.
+2020/04/29 08:27:34 kid1| Logfile: opening log daemon:/var/log/squid/access.log
+2020/04/29 08:27:34 kid1| Logfile Daemon: opening log /var/log/squid/access.log
+2020/04/29 08:27:34 kid1| Unlinkd pipe opened on FD 13
+2020/04/29 08:27:34 kid1| Local cache digest enabled; rebuild/rewrite every 3600/3600 sec
+2020/04/29 08:27:34 kid1| Store logging disabled
+2020/04/29 08:27:34 kid1| Swap maxSize 262144 + 262144 KB, estimated 40329 objects
+2020/04/29 08:27:34 kid1| Target number of buckets: 2016
+2020/04/29 08:27:34 kid1| Using 8192 Store buckets
+2020/04/29 08:27:34 kid1| Max Mem  size: 262144 KB
+2020/04/29 08:27:34 kid1| Max Swap size: 262144 KB
+2020/04/29 08:27:35 kid1| Rebuilding storage in /var/cache/squid (dirty log)
+2020/04/29 08:27:35 kid1| Using Least Load store dir selection
+2020/04/29 08:27:35 kid1| Set Current Directory to /var/cache/squid
+2020/04/29 08:27:35 kid1| Finished loading MIME types and icons.
+2020/04/29 08:27:35 kid1| HTCP Disabled.
+2020/04/29 08:27:35 kid1| Squid plugin modules loaded: 0
+2020/04/29 08:27:35 kid1| Adaptation support is off.
+2020/04/29 08:27:35 kid1| Accepting HTTP Socket connections at local=0.0.0.0:3128 remote=[::] FD 16 flags=9
+2020/04/29 08:27:35 kid1| Done reading /var/cache/squid swaplog (0 entries)
+2020/04/29 08:27:35 kid1| Store rebuilding is 0.00% complete
+2020/04/29 08:27:35 kid1| Finished rebuilding storage from disk.
+2020/04/29 08:27:35 kid1|         0 Entries scanned
+2020/04/29 08:27:35 kid1|         0 Invalid entries.
+2020/04/29 08:27:35 kid1|         0 With invalid flags.
+2020/04/29 08:27:35 kid1|         0 Objects loaded.
+2020/04/29 08:27:35 kid1|         0 Objects expired.
+2020/04/29 08:27:35 kid1|         0 Objects cancelled.
+2020/04/29 08:27:35 kid1|         0 Duplicate URLs purged.
+2020/04/29 08:27:35 kid1|         0 Swapfile clashes avoided.
+2020/04/29 08:27:35 kid1|   Took 0.02 seconds (  0.00 objects/sec).
+2020/04/29 08:27:35 kid1| Beginning Validation Procedure
+2020/04/29 08:27:35 kid1|   Completed Validation Procedure
+2020/04/29 08:27:35 kid1|   Validated 0 Entries
+2020/04/29 08:27:35 kid1|   store_swap_size = 0.00 KB
+2020/04/29 08:27:35 kid1| storeLateRelease: released 0 objects
+2020/04/29 08:32:42 kid1| Starting new basicauthenticator helpers...
+2020/04/29 08:32:42 kid1| helperOpenServers: Starting 1/5 'basic_ncsa_auth' processes

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  frpc:
+    image: traceflight/frpc:0.32.1
+    container_name: frpc
+    restart: always
+    network_mode: "host"
+    volumes:
+      - ./config:/etc/frp
+      - ./log:/var/log

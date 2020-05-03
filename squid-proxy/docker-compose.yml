@@ -10,8 +10,8 @@ services:
     volumes:
       - ./squid_log:/var/log/squid
       - ./squid_cache:/var/cache/squid
-      # Alvin@123456a?
-      - ./passwd:/etc/squid/passwd
+      # alvin@123456a?
+      - ./passwdback:/etc/squid/passwd
       - ./squid.conf:/etc/squid/squid.conf
     dns:
       # - 210.45.240.99 # HFUT

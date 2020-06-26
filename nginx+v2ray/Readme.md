@@ -10,11 +10,11 @@
 - config.json 为配置文件，可以设置v2ray端口、id、额外id、域名、伪装路径、监听主机
 
 ### script.conf
-- 网上[一键脚本](https://www.hijk.pw/v2ray-one-click-script-with-mask/)得到的配置文件，供配置文件出错时参考
+- [一键安裝Vray+ws+tls脚本](https://www.hijk.pw/v2ray-one-click-script-with-mask/)得到的配置文件，供配置文件出错时参考
 
 ### init-nginx-v2ray.sh
-- 为网站生成证书，使用方法 `creat-ssl.sh www.vultr.com xxx@gmail.com host(bridge) /pathtov2ray`
-- 此文件完成了自动替换配置文件中的某些自动，提高了效率。
+- 为网站生成证书，使用方法 `creat-ssl.sh www.domain.com xxx@gmail.com host(bridge) /pathtov2ray`
+- 此脚本完成了一键自动为nginx的https代理生成证书并修改相应配置文件，最后启动nginx和v2ray服务。
 - 若此文件以及自clone起以及被执行过一次，则不能再次执行，需要重新clone，否则会因为某些字段找不到出错。经测试，除非ssl证书申请出错（可能是域名短时间内申请次数太多），否则不会出错。出bug请联系作者lisishang@gmail.com
 
 ### recreate-ssl.sh

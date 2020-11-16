@@ -112,3 +112,5 @@ remote_port = 31194
 #### 参考链接
 
 - [登录测试，用于密码验证脚本参考代码](https://blog.csdn.net/dieaixia5129/article/details/86438820)
+- [网卡限速脚本](https://serverfault.com/questions/777875/how-to-do-traffic-shaping-rate-limiting-with-tc-per-openvpn-client)
+- [Linux 下 TC 命令原理及详解](https://blog.csdn.net/pansaky/article/details/88801249)

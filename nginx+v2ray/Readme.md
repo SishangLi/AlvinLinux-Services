@@ -38,3 +38,10 @@
 -------
 
 注：两种网络方式是因为，若VPS的iIPV4地址被墙，则谷歌学术需要通过修改/etc/hosts来使用IPV6地址访问。按理说host模式就可以实现，实测不可以（2020年上半年）。故寻找在容器中分配IPV6地址来解决此问题，但是因为只是匮乏，容器中分配IPV6地址的方式一致没有成果，在容器中也只能使用IPV4访问。
+
+### 参考链接
+
+- [letsencrypt](https://letsencrypt.org/zh-cn/docs/integration-guide/)
+- [一键脚本极配置文件](https://tlanyan.me/v2ray-tutorial/)
+- [V2Ray 配置指南](https://toutyrater.github.io/)
+- [使用Docker容器签发和自动续期Let's Encrypt证书](https://blog.newnius.com/automated-letsencrypt-certbot-with-docker.html)

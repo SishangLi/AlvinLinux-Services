@@ -37,6 +37,7 @@
     user root 
     group root
     ```
+
   - 在openvpn配置文件中添加以下内容，开启账户认证：
     ```
     ### use username and password login
@@ -45,6 +46,7 @@
     username-as-common-name
     script-security 3
     ```
+
   - 在openvpn配置文件中添加以下内容，开启限速功能：
     ```
     ### band width limit
@@ -77,6 +79,7 @@
   - 客户端文件中的`redirect-gateway def1`参数默认是注释的，该参数将客户端全部流量均转入服务端代理，在客户端网络复杂，尤其是不需要代理所有网站时候，次参数是十分糟糕的选项，若需要代理全部流量，取消注释即可。
   - 若服务端IP可以被客户端直接连接到，那么`remote xxx.xxx.xxx.xxx 1194 udp` 参数中的IP直接写服务端所在服务器的IP。事实上，需要OpenVPN的场景下，通常是无法直接连接到服务端的，这就需要frp来做内网穿透，这里需要填写frp服务端公网服务器的IP，端口填写frp为OpenVPN设置的远程端口。详情参见下面frp的设置。
 - 一切准备就绪，启动服务端 `docker-compose up -d`
+
 #### Frp配置
 - [Frp](https://github.com/fatedier/frp)用来做内网穿透，可以将OpenVPN的1194端口映射在公网上，从而可以在任意位置连接到内网的openvpn服务上。
 - 请在公网服务器下载好frp，并将frp的服务端frps运行在公网服务器上，最简frps.ini配置可参见官网：
@@ -86,6 +89,7 @@
 bind_port = 7000
 ```
 - 修改客户端配置文件`openvpn+frpc/frpc-docker/config/frpc.ini`,如下
+
 ```
 [common]
 server_addr = xxx.xxx.xxx 
@@ -105,5 +109,6 @@ remote_port = 31194
 - 一切准备就绪，客户端连接即可。
 
 
+#### 参考链接
 
-
+- [登录测试，用于密码验证脚本参考代码](https://blog.csdn.net/dieaixia5129/article/details/86438820)

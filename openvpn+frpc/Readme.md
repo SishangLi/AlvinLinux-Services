@@ -22,33 +22,39 @@
 ### 以下步骤为快速部署提供命令指南，默认采用docker-compose构建、开启账户认证并使用方案二限速(请确保已安装docker-ce和docker-compose)。
 #### OpenVPN配置
 - 克隆本项目 `https://github.com/SishangLi/AlvinLinux-Services.git` 本项目包含了作者的其他工具和脚本文件，本教程只需要openvpn+frpc下的文件，其他文件若不需要可自行删除。
-- 生成镜像 `cd AlvinLinux-services/openvpn+frpc/openvpn/create-image && docker build -t kylemanna/openvpn:alvin .`
+
+- 生成镜像 `cd AlvinLinux-Services/openvpn+frpc/openvpn/create-image && docker build -t kylemanna/openvpn .` （若不成功可以尝试直接拉取`docker pull kylemanna/openvpn`）
+
 - 生成配置文件 `cd .. && docker-compose run --rm openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM` (将`VPN.SERVERNAME.COM`换成所在服务器的IP。
+
 - 生成证书 `docker-compose run --rm openvpn ovpn_initpki` ，依次需要输入：
   - 根证书 CA KEY 密码
   - 确认 CA KEY 密码
   - Common Name 名字
   - 根证书 CA KEY 密码
   - 根证书 CA KEY 密码
+  
 - 修改配置文件权限 `sudo chown -R $(whoami): ./openvpn-data` 可忽略。若未执行此步骤需要使用sudo修改以下文件内容
+
 - 修改openvpn配置文件 `vim openvpn-data/conf/openvpn.conf`
-  - 在openvpn配置文件中修改以下内容（注：本着docker微服务拥有的权限越少越好的原则，若不启用限速功能，可以不必使用root。只启用账户认证将`nobody`修改为`openvpn`即可，若认证功能也不启用，则不需要修改，维持nobody即可。）：
+  - 在openvpn配置文件中修改**user**和**group**的身份，这里默认开启限速和认证功能，直接修改为``root`（注：本着docker微服务拥有的权限越少越好的原则，若不启用限速功能，可以不必使用`root`。如果只启用账户认证将原来的`nobody`修改为`openvpn`即可，若认证功能也不启用，则不需要修改，维持nobody即可。）：
+    
     ```
     user root 
     group root
-    ```
-
+```
+    
   - 在openvpn配置文件中添加以下内容，开启账户认证：
-    ```
+    ```shell
     ### use username and password login
     auth-user-pass-verify /etc/openvpn/checkpsw.sh via-env
     client-cert-not-required
     username-as-common-name
     script-security 3
-    ```
-
+  ```
+  
   - 在openvpn配置文件中添加以下内容，开启限速功能：
-    ```
+    ```shell
     ### band width limit
     down-pre
     up /etc/openvpn/traffic-control.sh
@@ -56,28 +62,34 @@
     client-connect /etc/openvpn/traffic-control.sh
     client-disconnect /etc/openvpn/traffic-control.sh
     ```
+    
   - 在openvpn配置文件中注释以下内容：
-    ```
-    # 次三行内容不注释不影响使用，但是客户端会有警告
+    ```shell
+    # 以下三行内容不注释不影响使用，但是客户端会有警告
     # push "block-outside-dns"
     # push "dhcp-option DNS 8.8.8.8"
     # push "dhcp-option DNS 8.8.4.4"
     # 注释以下路由规则，默认不路由任何网络
     # route 192.168.254.0 255.255.255.0
     ```
+  
 - 复制账户认证和限速功能需要的脚本到openvpn挂载目录 `cp tools/* openvpn-data/conf/`
+
 - 修改文件权限
   - `chmod +x openvpn-data/conf/checkpsw.sh openvpn-data/conf/traffic-control.sh`
   - `chmod 666 openvpn-data/conf/openvpn-password.log`
   - `chmod 777 openvpn-data/conf/pwd.sh`
-- 修改checkpsw.sh文件，将要认证的目标服务器IP填入替换`xxx.xxx.xxx.xxx`，端口默认22，需要修改端口请自行在该脚本里修改。
+  
+- 修改checkpsw.sh文件，将要认证的目标服务器IP填入替换`xxx.xxx.xxx.xxx`，端口默认22，需要修改端口请自行在该脚本里修改。`vim openvpn-data/conf/checkpsw.sh`
+
 - 修改客户端配置文件client.ovpn
   
   - 获得ca.crt `cat openvpn-data/conf/pki/ca.crt`,替换掉client.ovpn中的`# ------ ca.crt`
   - 获得ta.key `cat openvpn-data/conf/pki/ta.key`,替换掉client.ovpn中的`# ------ ta.key`
   - 此外，为方便自定义需要路由的网络，客户端默认不添加任何路由，服务端也不添加任何路由，客户手动修改`route xxx.xxx.0.0 255.255.0.0`来修改需要接入VPN隧道的网络，如何确定哪些网络需要路由不在本项目的指导范围内，请自行了解。
-  - 客户端文件中的`redirect-gateway def1`参数默认是注释的，该参数将客户端全部流量均转入服务端代理，在客户端网络复杂，尤其是不需要代理所有网站时候，次参数是十分糟糕的选项，若需要代理全部流量，取消注释即可。
+  - 客户端文件中的`redirect-gateway def1`参数默认是注释的，该参数将客户端全部流量均转入服务端代理，在客户端网络复杂，尤其是不需要代理所有网站时候，此参数是十分糟糕的选项，若需要代理全部流量，取消注释即可。
   - 若服务端IP可以被客户端直接连接到，那么`remote xxx.xxx.xxx.xxx 1194 udp` 参数中的IP直接写服务端所在服务器的IP。事实上，需要OpenVPN的场景下，通常是无法直接连接到服务端的，这就需要frp来做内网穿透，这里需要填写frp服务端公网服务器的IP，端口填写frp为OpenVPN设置的远程端口。详情参见下面frp的设置。
+  
 - 一切准备就绪，启动服务端 `docker-compose up -d`
 
 #### Frp配置

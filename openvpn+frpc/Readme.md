@@ -23,7 +23,7 @@
 #### OpenVPN配置
 - 克隆本项目 `https://github.com/SishangLi/AlvinLinux-Services.git` 本项目包含了作者的其他工具和脚本文件，本教程只需要openvpn+frpc下的文件，其他文件若不需要可自行删除。
 
-- 生成镜像 `cd AlvinLinux-Services/openvpn+frpc/openvpn/create-image && docker build -t kylemanna/openvpn .` （若不成功可以尝试直接拉取`docker pull kylemanna/openvpn`）
+- 生成镜像 `cd AlvinLinux-Services/openvpn+frpc/openvpn/create-image && docker build -t kylemanna/openvpn:christopher .` 
 
 - 生成配置文件 `cd .. && docker-compose run --rm openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM` (将`VPN.SERVERNAME.COM`换成所在服务器的IP。
 

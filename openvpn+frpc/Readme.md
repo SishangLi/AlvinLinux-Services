@@ -42,8 +42,8 @@
     ```
     user root 
     group root
-```
-    
+    ```
+
   - 在openvpn配置文件中添加以下内容，开启账户认证：
     ```shell
     ### use username and password login
@@ -51,8 +51,8 @@
     client-cert-not-required
     username-as-common-name
     script-security 3
-  ```
-  
+    ```
+
   - 在openvpn配置文件中添加以下内容，开启限速功能：
     ```shell
     ### band width limit
@@ -62,7 +62,7 @@
     client-connect /etc/openvpn/traffic-control.sh
     client-disconnect /etc/openvpn/traffic-control.sh
     ```
-    
+  
   - 在openvpn配置文件中注释以下内容：
     ```shell
     # 以下三行内容不注释不影响使用，但是客户端会有警告

@@ -2,6 +2,12 @@
 
 综述：Docker微服务一键部署
 
+### 2021.4.23
+- 新增```frpc-docker```,``` frps-docker```
+- ```frpc.ini``` 新增P2P穿透方式(视路由器而定，不能穿透所有NAT设备，详见frp官方文档)
+
+---
+
 ### 代理
 
 - [HTTP代理](https://github.com/SishangLi/AlvinLinux-Services/tree/master/squid-proxy)
@@ -9,7 +15,8 @@
 
 - [v2ray+ws+tls 科学上网](https://github.com/SishangLi/AlvinLinux-Services/tree/master/nginx%2Bv2ray)
 
-### [预处理脚本](https://github.com/SishangLi/AlvinLinux-Services/tree/master/vps-init)
+### Vultr VPS 一键初始化
+- [预处理脚本](https://github.com/SishangLi/AlvinLinux-Services/tree/master/vps-init)
 - 此脚本用于初始化新建的VPS实例，包括root密码修改、新建用户以及安装常用软件包。
 
 ### [OpenVPN+Frpc虚拟个人网络搭建](https://github.com/SishangLi/AlvinLinux-Services/tree/master/openvpn%2Bfrpc)

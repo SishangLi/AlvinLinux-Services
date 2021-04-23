@@ -7,7 +7,7 @@
 
 ## docker
 
-```
+```shell
 $ mkdir ./config
 $ tee ./config/frps.ini <<-'EOF'
 [common]
@@ -19,13 +19,12 @@ $ docker run -d \
        --name frps \
        -v `pwd`/config:/etc/frp \
        -v `pwd`/log:/var/log \
-       traceflight/frps
+       snowdreamtech/frps
 ```
 
 ## docker-compose
 
-```
-$ git clone https://github.com/traceflight/frps-docker.git
+```ymal
 $ cd frps-docker
 $ docker-compose up -d
 ```

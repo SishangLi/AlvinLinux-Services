@@ -7,9 +7,9 @@
 
 ## docker
 
-```
+```shell
 $ mkdir ./config
-$ tee ./config/frps.ini <<-'EOF'
+$ tee ./config/frpc.ini <<-'EOF'
 [common]
 server_addr = xxx.xxx.xxx.xxx
 server_port = 7000
@@ -26,13 +26,12 @@ $ docker run -d \
        --name frpc \
        -v `pwd`/config:/etc/frp \
        -v `pwd`/log:/var/log \
-       traceflight/frpc
+       snowdreamtech/frpc
 ```
 
 ## docker-compose
 
-```
-$ git clone https://github.com/traceflight/frpc-docker.git
+```ymal
 $ cd frpc-docker
 $ docker-compose up -d
 ```
@@ -40,3 +39,4 @@ $ docker-compose up -d
 # 配置
 
 参考[官方说明](https://github.com/fatedier/frp/blob/master/README_zh.md)
+

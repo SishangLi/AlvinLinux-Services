@@ -23,9 +23,9 @@
 #### OpenVPN配置
 - 克隆本项目 `https://github.com/SishangLi/AlvinLinux-Services.git` 本项目包含了作者的其他工具和脚本文件，本教程只需要openvpn+frpc下的文件，其他文件若不需要可自行删除。
 
-- 生成镜像 `cd AlvinLinux-Services/openvpn+frpc/openvpn/create-image && docker build -t kylemanna/openvpn:christopher .` 
+- 生成镜像 `cd AlvinLinux-Services/openvpn+frpc/openvpn && docker build -t kylemanna/openvpn:christopher .` 
 
-- 生成配置文件 `cd .. && docker-compose run --rm openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM` (将`VPN.SERVERNAME.COM`换成所在服务器的IP。
+- 生成配置文件 `docker-compose run --rm openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM` (将`VPN.SERVERNAME.COM`换成所在服务器的IP。
 
 - 生成证书 `docker-compose run --rm openvpn ovpn_initpki` ，依次需要输入：
   - 根证书 CA KEY 密码
@@ -120,6 +120,11 @@ remote_port = 31194
 - 将公网服务器的IP 和 OpenVPN的远程端口填入OpenVPN的客户端配置文件中即可。
 - 一切准备就绪，客户端连接即可。
 
+---
+#### P2P加速
+- frp可以开机基于xtcp协议的p2p连接，只需要在建立连接时用到公网服务器做辅助，在建立连接后即可实现端到端的连接，可以一定程度提高速度，特别是公网服务器带宽比较低时可以有很好的提升作用。
+
+---
 
 #### 参考链接
 
